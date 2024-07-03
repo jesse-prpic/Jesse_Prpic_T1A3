@@ -1,3 +1,5 @@
+from letter_response import Responsiveness
+
 class Word_game:
 
 # Game Play of the terminal application, a game where we have 8 attempts for a 6 letter word
@@ -11,6 +13,18 @@ class Word_game:
 
     def guess(self, word: str):
         self.guesses.append(word)
+    
+    def tries(self, word: str):
+        result = []
+
+        for index in range(self.WORD_LEGNTH):
+            character = word[index]
+            letter = Responsiveness(character)
+            letter.in_word = character in self.hidden_word
+            letter.in_position = character == self.hidden_word[index]
+            result.append(letter)
+        return result
+
 
 # Property function when the game has been won
     @property

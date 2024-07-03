@@ -8,6 +8,8 @@ def main():
     while word_game.ongoing_guesses:
             x = input("Guess a word: ")
             word_game.guess(x)
+            result = word_game.tries(x)
+            print(result)
 
 # If the guess is correct, you will win the game - if not you lose.
     if word_game.game_won:
