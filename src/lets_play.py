@@ -3,11 +3,14 @@ from word_game import Word_game
 from letter_response import Responsiveness
 # import sys
 from colorama import Fore, Back
+import random
 
 # Defining the game play and outputs of the players guesses
 def main():
-    print("Welcome to Word Game!")
-    word_game = Word_game("APPLES")
+
+    six_letter_word = six_letter_word_library("data/sixletterwords.txt")
+    hidden_word = random.choice(list(six_letter_word))
+    word_game = Word_game(hidden_word)
 
 # The player is only able to guess 6 letter words, if more or less they will be given an error
     while word_game.ongoing_guesses:
@@ -41,6 +44,14 @@ def show_results(word_game: Word_game):
          lines.append("  ".join(["_"] * word_game.WORD_LEGNTH))
 
     box_border(lines)
+
+def six_letter_word_library(path: str):
+    six_letter_set = set()
+    with open (path, "r") as f:
+        for line in f.readlines():
+            word = line.strip().upper()
+            six_letter_set.add(word)
+    return(six_letter_set)
 
 # Function to convert letters into colors - green, yellow and white
 def letters_to_colors (result: List[Responsiveness]):

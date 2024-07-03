@@ -10,7 +10,6 @@ class Word_game:
     def __init__(self, hidden_word: str):
         self.hidden_word: str = hidden_word.upper()
         self.guesses = []
-        pass
 
     def guess(self, word: str):
         word = word.upper()
