@@ -1,4 +1,5 @@
 from letter_response import Responsiveness
+from termcolor import colored
 
 class Word_game:
 
@@ -7,11 +8,12 @@ class Word_game:
     WORD_LEGNTH = 6
 
     def __init__(self, hidden_word: str):
-        self.hidden_word: str = hidden_word
+        self.hidden_word: str = hidden_word.upper()
         self.guesses = []
         pass
 
     def guess(self, word: str):
+        word = word.upper
         self.guesses.append(word)
     
     def tries(self, word: str):
