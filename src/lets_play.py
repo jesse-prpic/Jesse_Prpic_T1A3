@@ -28,14 +28,19 @@ def main():
 
 # function to show the letters as the respective colors with each guess
 def show_results(word_game: Word_game):
-    print(f"\n You have {word_game.numbered_guesses} chances left")
+    print(f"\n You have {word_game.numbered_guesses} chances left\n")
+    
+    lines = []
+
     for word in word_game.guesses:
         result = word_game.tries(word)
         colored_results_str = letters_to_colors (result)
-        print(colored_results_str)
+        lines.append(colored_results_str)
     
     for _ in range(word_game.numbered_guesses):
-        print("  ".join(["_"] * word_game.WORD_LEGNTH))
+         lines.append("  ".join(["_"] * word_game.WORD_LEGNTH))
+
+    box_border(lines)
 
 # Function to convert letters into colors - green, yellow and white
 def letters_to_colors (result: List[Responsiveness]):
@@ -50,6 +55,19 @@ def letters_to_colors (result: List[Responsiveness]):
         colored_character = color + character.letter + Back.RESET
         colored_results.append(colored_character)
     return "  ".join(colored_results)   
+
+def box_border(lines: List[str], size:int=16, pad=2):
+
+    content_length = size + pad * 2
+    top_border = "┏" + "═" * content_length + "┓"
+    bottom_border = "┗" + "═" * content_length + "┛"
+    space = " " * pad
+    print(top_border)
+
+    for line in lines:
+        print("║" + space + line + space + "║")
+
+    print(bottom_border)
 
 if __name__ == "__main__":
     main()
