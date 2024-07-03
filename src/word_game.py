@@ -1,5 +1,5 @@
 from letter_response import Responsiveness
-from termcolor import colored
+from colorama import Fore
 
 class Word_game:
 
@@ -13,7 +13,7 @@ class Word_game:
         pass
 
     def guess(self, word: str):
-        word = word.upper
+        word = word.upper()
         self.guesses.append(word)
     
     def tries(self, word: str):
