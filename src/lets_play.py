@@ -11,7 +11,7 @@ def main():
 
 # The player is only able to guess 6 letter words, if more or less they will be given an error
     while word_game.ongoing_guesses:
-            x = input("Guess a word: ")
+            x = input("\n Guess a word: ")
 
             if len(x) != word_game.WORD_LEGNTH:
                 print(Back.RED + f"Word must be {word_game.WORD_LEGNTH} characters long! " + Back.RESET)
@@ -28,11 +28,14 @@ def main():
 
 # function to show the letters as the respective colors with each guess
 def show_results(word_game: Word_game):
+    print(f"\n You have {word_game.numbered_guesses} chances left")
     for word in word_game.guesses:
         result = word_game.tries(word)
         colored_results_str = letters_to_colors (result)
         print(colored_results_str)
-    pass
+    
+    for _ in range(word_game.numbered_guesses):
+        print("  ".join(["_"] * word_game.WORD_LEGNTH))
 
 # Function to convert letters into colors - green, yellow and white
 def letters_to_colors (result: List[Responsiveness]):
