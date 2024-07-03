@@ -1,5 +1,6 @@
 from word_game import Word_game
 
+# Defining the game play and outputs of the players guesses
 def main():
     print("Welcome to Word Game!")
     word_game = Word_game("APPLES")
@@ -8,6 +9,7 @@ def main():
             x = input("Guess a word: ")
             word_game.guess(x)
 
+# If the guess is correct, you will win the game - if not you lose.
     if word_game.game_won:
         print("Congratulations, you guess is correct!")
     else:
