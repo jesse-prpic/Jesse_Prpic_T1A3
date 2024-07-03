@@ -8,8 +8,8 @@ import random
 # Defining the game play and outputs of the players guesses
 def main():
 
-    six_letter_word = six_letter_word_library("data/sixletterwords.txt")
-    hidden_word = random.choice(list(six_letter_word))
+    six_letter_set = six_letter_word_library("data/sixletterwords.txt")
+    hidden_word = random.choice(list(six_letter_set))
     word_game = Word_game(hidden_word)
 
 # The player is only able to guess 6 letter words, if more or less they will be given an error
@@ -20,6 +20,10 @@ def main():
                 print(Back.RED + f"Word must be {word_game.WORD_LEGNTH} characters long! " + Back.RESET)
                 continue
 
+            if not x in six_letter_set:
+                print(Back.RED + f"{x} is not a valid option!" + Back.RESET)
+                continue
+
             word_game.guess(x)
             show_results(word_game)
 
@@ -28,6 +32,7 @@ def main():
         print("Congratulations, you guess is correct!")
     else:
          print("Womp womp, try again!")
+         print(f"The hidden word was: {word_game.hidden_word}")
 
 # function to show the letters as the respective colors with each guess
 def show_results(word_game: Word_game):
@@ -47,11 +52,11 @@ def show_results(word_game: Word_game):
 
 def six_letter_word_library(path: str):
     six_letter_set = set()
-    with open (path, "r") as f:
+    with open(path, "r") as f:
         for line in f.readlines():
             word = line.strip().upper()
             six_letter_set.add(word)
-    return(six_letter_set)
+    return six_letter_set
 
 # Function to convert letters into colors - green, yellow and white
 def letters_to_colors (result: List[Responsiveness]):
