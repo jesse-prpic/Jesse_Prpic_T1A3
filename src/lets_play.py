@@ -143,7 +143,7 @@ def display_scoreboard(players):
         games_lost = data['games_lost']
         total_games = data['total_games']
         win_percent = (games_won / total_games) * 100 if total_games > 0 else 0
-        print("{:<15} {:<10} {:<10} {:<10.2f}".format(player, games_won, games_lost, win_percent))
+        print(Back.BLUE + "{:<15} {:<10} {:<10} {:<10.2f}".format(player, games_won, games_lost, win_percent) + Back.RESET )
 
 def update_scoreboard(players, player_name, game_won):
     if player_name not in players:
