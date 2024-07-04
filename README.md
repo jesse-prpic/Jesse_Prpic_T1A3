@@ -11,8 +11,8 @@ The features that I have displayed are;
 
 ### Color Indicators
 - Green: To display that the letter of the word that you have chosen is correct position.
-- Blue: To display that the letter of the word that you have chosen is in the word, however not in the correct position.
-- Grey: To display the letter is not in the word.
+- Yellow: To display that the letter of the word that you have chosen is in the word, however not in the correct position.
+- White: To display the letter is not in the word.
 
 ### Scoring
 - Scoring will be done is two ways;
