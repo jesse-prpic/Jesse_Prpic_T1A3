@@ -1,1 +1,3 @@
-termcolor
+colorama
+pep8
+autopep8
