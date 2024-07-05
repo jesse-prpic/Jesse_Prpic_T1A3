@@ -37,6 +37,7 @@ class Word_game:
     def numbered_guesses(self) -> int:
         return self.MAXIMUM_GUESS - len(self.guesses)
 
+# Demonstrating how many guesses can be continued to be done
     @property
     def ongoing_guesses(self):
         return self.numbered_guesses > 0 and not self.game_won
