@@ -1,10 +1,9 @@
+
 from typing import List
 from word_game import Word_game
 from letter_response import Responsiveness
 from colorama import Fore, Back, init
 import random
-
-init(autoreset=True)  # Initialize colorama
 
 def main():
     players = {}  # Dictionary to store player data
@@ -162,10 +161,16 @@ def update_scoreboard(players, player_name, game_won):
 
 def six_letter_word_library(path: str):
     six_letter_set = set()
-    with open(path, "r") as f:
-        for line in f.readlines():
-            word = line.strip().upper()
-            six_letter_set.add(word)
+    try:
+        with open(path, "r") as f:
+            for line in f.readlines():
+                word = line.strip().upper()
+                if len(word) == 6:  # Ensure words are exactly six letters long
+                    six_letter_set.add(word)
+                else:
+                    print(f"Ignoring word: {word}. Only six-letter words are allowed.")
+    except FileNotFoundError:
+        print(f"File not found: {path}")
     return six_letter_set
 
 def letters_to_colors(result: List[Responsiveness]):
