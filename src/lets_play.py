@@ -14,6 +14,7 @@ from colorama import Fore, Back, init
 # Allowing the word list to randomise so it is harder for the player to guess
 import random
 
+
 # Defining the print menu, with starting game, add new player, scoreboard and to exit
 def main():
     players = {}
