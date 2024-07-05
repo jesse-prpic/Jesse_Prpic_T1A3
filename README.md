@@ -37,7 +37,7 @@ The features that I have displayed are;
 - A panel has been created to show the player how the letters are places, the color they indicate and how many attempts they will have left.
     - This creates a feature for the player to visualise the game in a more appealing way
 
-![alt text](image.png)
+![alt text](<data/Guessing Panel.png>)
 
 ### Scoring
 - Scoring will be done is two ways;
