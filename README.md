@@ -58,18 +58,18 @@ A flowchart is important to contexualise what is happening with the actual code 
 
 Throughout this implementation plan I have made a flowchart conceptualising this where you can see it below.
 
-FLOW CHART LEGENDS:
-Circle: Start / Stop
-Square: Functions
-Triangle: Print
-Elongated Hexagon: Exit/Break
-Star: Loop
-Right-Leaning Parallelagram: If conditions
-Left-Leaning Parallelagram: Elif conditions
-Diamond: Else conditions
-Arrow: Flow
+#### FLOW CHART LEGENDS:
+- Circle: Start / Stop
+- Square: Functions
+- Triangle: Print
+- Elongated Hexagon: Exit/Break
+- Star: Loop
+- Right-Leaning Parallelagram: If conditions
+- Left-Leaning Parallelagram: Elif conditions
+- Diamond: Else conditions
+- Arrow: Flow
 
-![alt text](<data/SIX_LETTER_WORD_GAME_FLOWCHART>)
+![alt text](<data/Flowchart.png>)
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fboard%2FZgTfT6PwpQSEgNo92No7bX%2FSIX-LETTER-WORD-GAME%3Fnode-id%3D0-1%26t%3DIiUX5zujBBSg9R3k-1" allowfullscreen></iframe>
 
