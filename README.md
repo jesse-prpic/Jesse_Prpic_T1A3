@@ -62,6 +62,21 @@ The features that I have displayed are;
         - the objective of this is for the user to not be able to use a filler word.
 
 
-<!-- Potential other features wanting -->
-<!-- To have a dictonary meaning of all the words available -->
-<!-- Score list (percentile of how many times the player got the word correct) -->
+## Implementation Plan
+
+### Trello
+This should outline:
+- Implemented and a checklist of tasks for each feature
+- Implementation of different features, or checklist items within a feature
+- Provide a deadline, duration or time indicator for each feature or checklist/checklist-item
+
+### Flowchart
+
+###
+
+## Help Documentation
+
+### Steps to installe the application
+#### Dependencies and requirements
+
+#### Any command line arguments made for the application
