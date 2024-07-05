@@ -12,10 +12,8 @@ Once the player guesses the word or they fail at doing so, this will be put into
 ## Features
 The features that I have displayed are;
 
-### Color Indicators
-- Green: To display that the letter of the word that you have chosen is correct position.
-- Yellow: To display that the letter of the word that you have chosen is in the word, however not in the correct position.
-- White: To display the letter is not in the word.
+### Menu Operations
+- Having multiple options when the player starts to either play, add player, see scoreboard and also to exit the game
 
 ### Add Player
 - Before each game starts, you are able to either start the game and play using an existing player, or you are able to add a player.
@@ -39,18 +37,12 @@ The features that I have displayed are;
 
 ![alt text](<data/Guessing Panel.png>)
 
-### Scoring
+### Scoreboard
 - Scoring will be done is two ways;
     - Percentage;
         - How successful the player has been with getting the word
     - Win or lose
         - How many times someone has won or lost the game
-
-### Add player
-- Having the ability to be able to do it in hard mode, instead of the player being able to guess any word, they will either need to;
-    - If there is a letter that has been used and it is grey, they are unable to use it again
-    - If there is a letter that is green or blue, they are needing to use this letter.
-        - the objective of this is for the user to not be able to use a filler word.
 
 
 ## Implementation Plan
@@ -66,6 +58,17 @@ A flowchart is important to contexualise what is happening with the actual code 
 
 Throughout this implementation plan I have made a flowchart conceptualising this where you can see it below.
 
+FLOW CHART LEGENDS:
+Circle: Start / Stop
+Square: Functions
+Triangle: Print
+Elongated Hexagon: Exit/Break
+Star: Loop
+Right-Leaning Parallelagram: If conditions
+Left-Leaning Parallelagram: Elif conditions
+Diamond: Else conditions
+Arrow: Flow
+
 ![alt text](<data/SIX_LETTER_WORD_GAME_FLOWCHART>)
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fboard%2FZgTfT6PwpQSEgNo92No7bX%2FSIX-LETTER-WORD-GAME%3Fnode-id%3D0-1%26t%3DIiUX5zujBBSg9R3k-1" allowfullscreen></iframe>
@@ -74,7 +77,7 @@ Throughout this implementation plan I have made a flowchart conceptualising this
 
 ## Help Documentation
 
-### Steps to installe the application
+### Steps to install the application
 #### Dependencies and requirements
 
 #### Any command line arguments made for the application
