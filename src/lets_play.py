@@ -166,11 +166,12 @@ def display_scoreboard(players):
     # Display scoreboard
     print("\nScoreboard:")
     print(
+        Back.LIGHTBLACK_EX + 
         "{:<15} {:<10} {:<10} {:<10}".format(
             "Player",
             "Games Won",
             "Games Lost",
-            "Win %"))
+            "Win %     " + Back.RESET))
     print("-" * 45)
     for player, data in scoreboard_sorted:
         games_won = data['game_won']
