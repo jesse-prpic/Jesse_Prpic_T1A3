@@ -1,4 +1,6 @@
+#Main frame of my game "Word Game"
 
+# Imports that interact and retrieve data from other modules throughout the terminal application
 from typing import List
 from word_game import Word_game
 from letter_response import Responsiveness
