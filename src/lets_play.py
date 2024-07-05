@@ -242,13 +242,13 @@ def letters_to_colors(result: List[Responsiveness]):
 
 def box_border(lines: List[str], size: int = 29, pad=3):
     content_length = size + pad * 3
-    top_border = "┏" + "═" * content_length + "┓"
-    bottom_border = "┗" + "═" * content_length + "┛"
+    top_border = Fore.MAGENTA + "┏" + "═" * content_length + "┓" + Fore.RESET
+    bottom_border = Fore.MAGENTA + "┗" + "═" * content_length + "┛" + Fore.RESET
     space = " " * pad
     print(top_border)
 
     for line in lines:
-        print("║" + space + line + space + "║")
+        print(Fore.MAGENTA + "║" + space + line + space + "║" + Fore.RESET)
 
     print(bottom_border)
 
