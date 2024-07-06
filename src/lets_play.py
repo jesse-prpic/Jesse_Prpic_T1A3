@@ -1,7 +1,8 @@
-#Main frame of my game "Word Game"
+# Main frame of my game "Word Game"
 
 
-# Imports that interact and retrieve data from other modules throughout the terminal application
+# Imports that interact and retrieve data from other modules throughout
+# the terminal application
 from typing import List
 from word_game import Word_game
 from letter_response import Responsiveness
@@ -15,7 +16,8 @@ from colorama import Fore, Back, init
 import random
 
 
-# Defining the print menu, with starting game, add new player, scoreboard and to exit
+# Defining the print menu, with starting game, add new player, scoreboard
+# and to exit
 def main():
     players = {}
 
@@ -45,7 +47,10 @@ def main():
         else:
             print("Invalid choice. Please enter 1, 2, 3, or 4.")
 
-# The abaility to add a new player before starting the game, this will allow the new player to have their results on the scoreboard
+# The abaility to add a new player before starting the game, this will
+# allow the new player to have their results on the scoreboard
+
+
 def add_player(players):
     player_name = input("Enter the name of the new player: ").strip()
     if player_name == "":
@@ -63,6 +68,8 @@ def add_player(players):
         print(f"{player_name} added to the players list.")
 
 # Once a player is created you can select said player or existing players
+
+
 def select_player(players):
     if not players:
         print("No players found. Please add players first.")
@@ -89,6 +96,8 @@ def select_player(players):
 # Defining the input and output of the games functions and how the integral part of guessing the hidden word
 # Syntax being able to restrict the player to only play a 6 letter word, if any less or any more there will be an error
 # Word has to be in the txt list
+
+
 def play_game(players, player_name):
     six_letter_set = six_letter_word_library("data/sixletterwords.txt")
     hidden_word = random.choice(list(six_letter_set))
@@ -125,6 +134,8 @@ def play_game(players, player_name):
     return False  # Return game_won=False if player did not win
 
 # introducing the game and the instructions for said game
+
+
 def game_introduction():
     print("Welcome to six-letter word game")
     print("Game Play:\nThe aim of the game is to guess the six letter word in the least amount of attempts - 8 being the final guess ")
@@ -162,7 +173,10 @@ def show_results(word_game: Word_game):
 
     box_border(lines)
 
-# Displaying all players who have added themselves in the game and who have played and scored.
+# Displaying all players who have added themselves in the game and who
+# have played and scored.
+
+
 def display_scoreboard(players):
     if not players:
         print("No players found. Please add players first.")
@@ -177,7 +191,7 @@ def display_scoreboard(players):
     # Display scoreboard
     print("\nScoreboard:")
     print(
-        Back.LIGHTBLACK_EX + 
+        Back.LIGHTBLACK_EX +
         "{:<15} {:<10} {:<10} {:<10}".format(
             "Player",
             "Games Won",
@@ -236,7 +250,8 @@ def six_letter_word_library(path: str):
         print(f"File not found: {path}")
     return six_letter_set
 
-# Defining what each guess will iterate with the answers, this follows the instructions that was previously given to player
+# Defining what each guess will iterate with the answers, this follows the
+# instructions that was previously given to player
 def letters_to_colors(result: List[Responsiveness]):
     colored_results = []
     for character in result:

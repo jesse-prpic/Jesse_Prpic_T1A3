@@ -4,6 +4,7 @@
 ## Overview
 A terminal application inspired by the game "WORDLE".
 This infrastructure will interact with different features and data.
+Throughout the project I will demonstrate my skills by showcasing this through technical knowledge.
 
 ## Objective 
 It allows the player to guess a six-letter word over a duration of 8 guesses - with the scoring model being whether they win and guess the word under 8 guesses or lose by not guessing the word.
@@ -47,7 +48,7 @@ The features that I have displayed are;
 
 ## Implementation Plan
 
-### Trello
+### Project Management Board - Trello
 This should outline:
 - Implemented and a checklist of tasks for each feature
 - Implementation of different features, or checklist items within a feature
@@ -80,4 +81,64 @@ Throughout this implementation plan I have made a flowchart conceptualising this
 ### Steps to install the application
 #### Dependencies and requirements
 
+python 3.6 or higher
+
+Most people will have Python already installed; however great to check:
+
+To check
+python3 --version
+
+If you do not have python3 installed, please see the following link to install dependant on your operating system:
+https://wsvincent.com/install-python/#install-python-on-macos
+
+_______________
+
+colorama v0.4.6
+
+To install
+"pip install colorama"
+
+_______________
+
+pep8
+
+To install
+"pip install pep8"
+To upgrade
+"pip install --upgrade pep8
+
+If needing to uninstall
+"pip uninstall pep8"
+
+_______________
+
+autopep8
+
+Install
+pip install --upgrade autopep8
+
+
 #### Any command line arguments made for the application
+
+## Resources
+
+- w3school
+https://www.w3schools.com/python/default.asp
+
+- Medium
+https://medium.com/pythons-gurus/a-beginners-guide-on-how-to-build-a-simple-python-application-with-a-command-line-interface-6d7fb187789b
+
+- PyPi
+https://pypi.org
+
+### Other noted resources
+- Trello
+- Figma / Draw.io
+- Codecademy
+- Class recording
+
+## For more information
+For more information on this project, you can find this through my Github repository https://github.com/jesse-prpic/JessePrpicPortfolioSite
+
+## Project Author
+Jesse Prpic
