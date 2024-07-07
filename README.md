@@ -78,7 +78,44 @@ Throughout this implementation plan I have made a flowchart conceptualising this
 
 ## Help Documentation
 
-### Steps to install the application
+The "Word Game" is a terminal application based game where players guess a hidden six-letter word within a limited number of attempts, this includes several features:
+- player management
+- scoreboard tracking
+- color feedback for each guess
+
+Instructions to start playing the game
+- Select "Start New Game" from the menu
+- Choose a player form the existing list or add a new player
+- Instruction on the game will be displayed
+
+The game play
+- Guess a 6 letter word - make sure this is on CAPS LOCK
+- Each guess will result in a color
+    - Green, Yellow and White - These will indicate whether the letter is in the correct position, or that the letter is in the wrong positon - otherwise the letter is not in the word, respective allocation to the indicators.
+
+The Scoreboard
+- Displays players game statistics whether they have won or lost and will have a percentile
+
+Once all dependencies are installed, you will need the following code to interact with the terminal application
+
+"python3 src/lets_play.py"
+
+### Installation
+
+Clone the respository
+- This is necessary for users who want to install and run "Word Game"
+
+Code 
+"git clone https://github.com/
+
+Change Directory to the folder containing the application
+
+Install dependencies
+"pip install -r requirements.txt"
+
+
+If dependencies do not work, please see the below on the dependencies and their requirements
+
 #### Dependencies and requirements
 
 python 3.6 or higher

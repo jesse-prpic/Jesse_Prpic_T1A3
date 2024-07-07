@@ -1,4 +1,4 @@
-python
-colorama
-pep8
-autopep8
+python 3.6 or higher
+colorama v0.4.6
+pep8 1.7.1
+autopep8 2.3.1
