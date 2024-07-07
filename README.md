@@ -178,10 +178,10 @@ https://pypi.org
 - Class recording
 
 ## For more information
-For more information on this project, you can find this through my Github repository https://github.com/jesse-prpic/JessePrpicPortfolioSite
+For more information on this project, you can find this through my Github repository https://github.com/jesse-prpic/Jesse_Prpic_T1A3.git
 
 ## Project Author
 Jesse Prpic
 
 ## Source Controls
-As of submitting this project there has been 30 git commits
+As of submitting this project there has been 31 git commits
